@@ -3,6 +3,7 @@
 
 ## Summary of assiginment
 + Project : 냉장고 속 물체 탐지(Object Detection in refrigerator)
+
 + Framework : `Keras`
 + Detection Network : `Mask RCNN`
 + Network Structure
@@ -12,10 +13,10 @@
 
 ## Result
 + Input
+   - `python test.py --model mask_rcnn_refri_cfg_0030.h5 --image apple_0068.jpg` 
+   - 혹은 model 옵션 생략 가능
    
-   - `python test.py --model mask_rcnn_refri_cfg_0030.h5 --image apple_0068.jpg`
-    
-   - or `python test.py --image apple_0068.jpg`
+        `python test.py --image apple_0068.jpg`
 
 + Result
     - Object detection result
