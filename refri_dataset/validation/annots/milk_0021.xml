@@ -1,0 +1,26 @@
+<annotation>
+	<folder>milk</folder>
+	<filename>milk_0021.jpg</filename>
+	<path>refri_dataset/validation/images/milk_0021.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>528</width>
+		<height>528</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>milk</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>344</xmin>
+			<ymin>68</ymin>
+			<xmax>528</xmax>
+			<ymax>512</ymax>
+		</bndbox>
+	</object>
+</annotation>

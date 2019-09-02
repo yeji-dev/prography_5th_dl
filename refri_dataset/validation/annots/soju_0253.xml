@@ -1,0 +1,26 @@
+<annotation>
+	<folder>soju</folder>
+	<filename>soju_0253.jpg</filename>
+	<path>refri_dataset/validation/images/soju_0253.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>582</width>
+		<height>582</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>soju</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>68</xmin>
+			<ymin>44</ymin>
+			<xmax>539</xmax>
+			<ymax>545</ymax>
+		</bndbox>
+	</object>
+</annotation>

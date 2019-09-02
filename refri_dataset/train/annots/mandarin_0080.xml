@@ -1,0 +1,26 @@
+<annotation>
+	<folder>mandarin</folder>
+	<filename>mandarin_0080.jpg</filename>
+	<path>refri_dataset/train/images/mandarin_0080.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1200</width>
+		<height>1200</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>mandarin</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>387</xmin>
+			<ymin>541</ymin>
+			<xmax>833</xmax>
+			<ymax>863</ymax>
+		</bndbox>
+	</object>
+</annotation>

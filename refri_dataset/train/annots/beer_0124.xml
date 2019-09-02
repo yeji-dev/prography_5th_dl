@@ -1,0 +1,26 @@
+<annotation>
+	<folder>beer</folder>
+	<filename>beer_0124.jpg</filename>
+	<path>refri_dataset/train/images/beer_0124.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>274</width>
+		<height>274</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>beer</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>94</xmin>
+			<ymin>20</ymin>
+			<xmax>193</xmax>
+			<ymax>273</ymax>
+		</bndbox>
+	</object>
+</annotation>

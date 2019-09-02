@@ -44,10 +44,10 @@
         - Learning time : 1d
         
 + `test.py`
-    - Training codes and Testing codes are integrated into a single file
     - **Accurcy**
         - Train mAP: 0.921
         - Test mAP: 0.810 
+    - Training codes and Testing codes are integrated into a single file
     - Can handle command line args
     - Added `my_display_instances` func to `mrcnn/visualize.py`
 + `csv_to_xml.py`
@@ -58,4 +58,3 @@
 ### References
 - [Mask RCNN Project, GitHub.](https://github.com/matterport/Mask_RCNN)
 - [Mask R-CNN, 2017, Paper.](https://arxiv.org/abs/1703.06870)
-- [How to Train an Object Detection Model with Keras, Blog.](https://machinelearningmastery.com/how-to-train-an-object-detection-model-with-keras)
