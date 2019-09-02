@@ -4,6 +4,7 @@
 ## Summary of assiginment
 + Project : 냉장고 속 물체 탐지(Object Detection in refrigerator)
 
+
 + Framework : `Keras`
 + Detection Network : `Mask RCNN`
 + Network Structure
@@ -14,42 +15,47 @@
 ## Result
 + Input
    - `python test.py --model mask_rcnn_refri_cfg_0030.h5 --image apple_0068.jpg` 
+   
    - 혹은 model 옵션 생략 가능
    
         `python test.py --image apple_0068.jpg`
 
 + Result
     - Object detection result
-    ![result_predict](./readme/result_predict.png "Object detection")
+    
+        ![result_predict](./readme/result_predict.png "Object detection")
     
     - Results when inserting unrelated pictures
-    ![result_unrelated](./readme/result_unrelated.png "Results when inserting unrelated pictures")
     
-* Note: command line options
+        ![result_unrelated](./readme/result_unrelated.png "Results when inserting unrelated pictures")
+    
+* Note: Command line options
 ![help](./readme/cmdline_help.png "Show help option in the command line")
 
 ## Implementations
 + `mask_rcnn_refri_cfg_0030.h5`
-    - this model has learned `detection_dataset` in the existing `mask_rcnn_coco.h5` model
-    - training description
-        - **Accurcy** : 
-        - data size
+    - This model has learned `detection_dataset` in the existing `mask_rcnn_coco.h5` model
+    - Training description
+        - Data size
             - train size : 1341, validation size : 169
-        - batch_size : 1341, epoch : 30
-        - learning duration : 1d
+        - Generator sample size
+            - 1 * 1341 (batch_size * steps_per_epoch)
+        - Epoch : 30
+        - Learning time : 1d
+        
 + `test.py`
-    - training and testing in 한파일에서 한번에된다. 맨위의 MODE 변수에 True/False값 넣어서 제어
+    - Training codes and Testing codes are integrated into a single file
     - **Accurcy**
-        - find object(binary classification) : 
-        - bbox position(regression) : 
-    - added custom func to `mrcnn/visualize.py`
-    - handle command line args
+        - Train mAP: 0.921
+        - Test mAP: 0.810 
+    - Can handle command line args
+    - Added `my_display_instances` func to `mrcnn/visualize.py`
 + `csv_to_xml.py`
-    - make an absolute coordinate for use in the bbox
-    - convert .csv to .xml and create new files at each `refri_dataset/.../annots/` folder
-    - `test.py`의 main에서 csv_to_xml()로 사용가능
+    - Make an absolute coordinate for use in the bbox
+    - Convert .csv to .xml and create new files at each `refri_dataset/.../annots/` folder
+    - `csv_to_xml()` func is used in line 220 of `test.py`
     
-###References
+### References
 - [Mask RCNN Project, GitHub.](https://github.com/matterport/Mask_RCNN)
 - [Mask R-CNN, 2017, Paper.](https://arxiv.org/abs/1703.06870)
 - [How to Train an Object Detection Model with Keras, Blog.](https://machinelearningmastery.com/how-to-train-an-object-detection-model-with-keras)
