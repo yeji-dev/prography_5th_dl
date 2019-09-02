@@ -1,16 +1,16 @@
 # prography_5th_dl
 프로그라피 5기 지원자 홍예지
 
-##Summary of assiginment
+## Summary of assiginment
 + Project : 냉장고 속 물체 탐지(Object Detection in refrigerator)
 + Framework : `Keras`
 + Detection Network : `Mask RCNN`
 + Network Structure
-    1. Multi Classification Model (CNN)
-    2. Binary Classification Model (이미지에 객체있는지 분류)
-    3. Regression Model (박스 그려주는 모델)
+    1. Multi Classification Model (Categorize of 6 categories)
+    2. Binary Classification Model (Find object)
+    3. Regression Model (Calculate bbox position)
 
-##Result
+## Result
 + Input
    
    - `python test.py --model mask_rcnn_refri_cfg_0030.h5 --image apple_0068.jpg`
@@ -27,7 +27,7 @@
 * Note: command line options
 ![help](./readme/cmdline_help.png "Show help option in the command line")
 
-##Implementations
+## Implementations
 + `mask_rcnn_refri_cfg_0030.h5`
     - this model has learned `detection_dataset` in the existing `mask_rcnn_coco.h5` model
     - training description
