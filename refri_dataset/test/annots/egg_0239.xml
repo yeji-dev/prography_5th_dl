@@ -1,0 +1,26 @@
+<annotation>
+	<folder>egg</folder>
+	<filename>egg_0239.jpg</filename>
+	<path>refri_dataset/test/images/egg_0239.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3588</width>
+		<height>3588</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>egg</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>355</xmin>
+			<ymin>432</ymin>
+			<xmax>3582</xmax>
+			<ymax>2432</ymax>
+		</bndbox>
+	</object>
+</annotation>
