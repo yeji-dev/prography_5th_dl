@@ -55,7 +55,7 @@
 + `csv_to_xml.py`
     - Make an absolute coordinate for use in the bbox
     - Convert .csv to .xml and create new files at each `refri_dataset/.../annots/` folder
-    - `csv_to_xml()` func is used in line 220 of `test.py`
+    - `csv_to_xml()` func is used in line 217 of `test.py`
     
 ## References
 - [Mask RCNN Project, GitHub.](https://github.com/matterport/Mask_RCNN)
