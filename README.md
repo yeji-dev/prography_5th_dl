@@ -42,7 +42,7 @@
         - Epoch : 30
         - Learning time : 1d
     - [Download my trained model (mask_rcnn_refri_cfg_0030.h5)](https://drive.google.com/open?id=1aKaF9Zu095W32YxAEte9v1_FCJUAky9m) _*파일 경로 : "refri_cfg20190902T0621/here"_
-    - This model has learned `detection_dataset` in the existing `mask_rcnn_coco.h5` model
+    - This model has learned `detection_dataset` in the existing `mask_rcnn_coco.h5` model<br>
     [Download Weights (mask_rcnn_coco.h5)](https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5) _*파일 경로 : "./here" (root directory)_
         
 + `test.py`
