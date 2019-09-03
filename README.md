@@ -14,36 +14,32 @@
 
 ## Result
 + Input
-   - `python test.py --model mask_rcnn_refri_cfg_0030.h5 --image apple_0068.jpg` 
-   
-   - 혹은 model 옵션 생략 가능
-   
+   - `python test.py --model mask_rcnn_refri_cfg_0030.h5 --image apple_0068.jpg` <br>
+   - 혹은 model 옵션 생략 가능<br>
         `python test.py --image apple_0068.jpg`
 
+
 + Result
-    - Object detection result
+    - Object detection result<br>
+    ![result_predict](./readme/result_predict.png "Object detection")
     
-        ![result_predict](./readme/result_predict.png "Object detection")
+    - Results when inserting unrelated picture<br>
+    ![result_unrelated](./readme/result_unrelated.png "Results when inserting unrelated pictures")
     
-    - Results when inserting unrelated pictures
-    
-        ![result_unrelated](./readme/result_unrelated.png "Results when inserting unrelated pictures")
-    
-* Note: Command line options
+* Note: Command line options<br>
 ![help](./readme/cmdline_help.png "Show help option in the command line")
 
 ## Implementations
 + `test.py`
-    - **Accurcy**
-        - Train mAP: 0.921
-        - Test mAP: 0.810 
     - Training codes and Testing codes are integrated into a single file
     - Can handle command line args
     - Added `my_display_instances` func to `mrcnn/visualize.py`
+    
+    
 + `mask_rcnn_refri_cfg_0030.h5`
-    - This model has learned `detection_dataset` in the existing `mask_rcnn_coco.h5` model<br>
-    [Download Weights (mask_rcnn_coco.h5)](https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5) _*파일 경로 : "./here" (root directory)_
-    - [Download my trained model (mask_rcnn_refri_cfg_0030.h5)](https://drive.google.com/open?id=1aKaF9Zu095W32YxAEte9v1_FCJUAky9m) _*파일 경로 : "refri_cfg20190902T0621/here"_
+    - **Accurcy**
+        - Train mAP: 0.921
+        - Test mAP: 0.810
     - Training description
         - Data size
             - train size : 1341, validation size : 169
@@ -51,6 +47,11 @@
             - 1 * 1341 (batch_size * steps_per_epoch)
         - Epoch : 30
         - Learning time : 1d
+    - This model has learned `detection_dataset` in the existing `mask_rcnn_coco.h5` model<br>
+    [Download Weights (mask_rcnn_coco.h5)](https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5) _*파일 경로 : "./here" (root directory)_
+    - [Download my trained model (mask_rcnn_refri_cfg_0030.h5)](https://drive.google.com/open?id=1aKaF9Zu095W32YxAEte9v1_FCJUAky9m) _*파일 경로 : "refri_cfg20190902T0621/here"_
+        
+        
 + `csv_to_xml.py`
     - Make an absolute coordinate for use in the bbox
     - Convert .csv to .xml and create new files at each `refri_dataset/.../annots/` folder
