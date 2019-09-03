@@ -57,6 +57,6 @@
     - Convert .csv to .xml and create new files at each `refri_dataset/.../annots/` folder
     - `csv_to_xml()` func is used in line 220 of `test.py`
     
-### References
+## References
 - [Mask RCNN Project, GitHub.](https://github.com/matterport/Mask_RCNN)
 - [Mask R-CNN, 2017, Paper.](https://arxiv.org/abs/1703.06870)
